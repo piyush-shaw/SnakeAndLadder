@@ -25,6 +25,15 @@
             else if (option == LADDER)
             {
                 position = position + die;
+                //UC5 staying at previous position till the player get exact number
+                if (position > 100)
+                {
+                    position = position - die;
+                }
+                else if (position == 100)
+                {
+                    Console.WriteLine("Player has won");
+                }
                 Console.WriteLine("(LADDER) After getting the ladder player position is " + position);
             }
             else
