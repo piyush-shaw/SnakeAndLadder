@@ -8,6 +8,7 @@
         Console.WriteLine("Welcome to Snake And Ladder Program");
         //UC1 initializing the player position
         int position = 0;
+        int count = 0;
         Console.WriteLine("Single Player starting position : " + position);
         //UC4 repeating until player gets wining position"
         while (position < 100)
@@ -35,6 +36,7 @@
                     Console.WriteLine("Player has won");
                 }
                 Console.WriteLine("(LADDER) After getting the ladder player position is " + position);
+                count++;
             }
             else
             {
@@ -44,7 +46,9 @@
                     position = 0;
                 }
                 Console.WriteLine("(SNAKE) After snake bite player position is " + position);
+                count++;
             }
+            Console.WriteLine("Die count to win the game is "+count);
         }
     }
 }
