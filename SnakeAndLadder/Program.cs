@@ -9,6 +9,7 @@
         //UC1 initializing the player position
         int position = 0;
         Console.WriteLine("Single Player starting position : " + position);
+        //UC4 repeating until player gets wining position"
         while (position < 100)
         {
             //UC2 Roll the dice to get a number
